@@ -13,7 +13,7 @@ Using the symbology from "Artificial intelligence (AI) architecture design" -  h
 
 ![project diagram](images/diagram.png)
 
-The first step is to import de Bankmarketing tabular data and make it available as a dataset.
+The first step is to import the Bankmarketing tabular data and make it available as a dataset.
 The second step is to create a AutoML experiment using the dataset, initially manually in AzureML web interface, and then programmatically, using a Jupyter notebook that runs in a compute instance and creates a automatic pipeline to perform the model training.
 The pipeline is published to a REST URL, so that it can be retrained from calls to this endpoint.
 The best AutoML model is deployed in a webservice on ACI, the Swagger endpoint documentation is inspected, and a python script is used to make calls do the REST URL of the model, performing inferences on input data, provided in JSON format.
